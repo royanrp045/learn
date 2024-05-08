@@ -10,4 +10,5 @@ div {
 div img {
   width: 400px;
   padding-bottom: 60px;
+  opacity: 0.25;
 }
