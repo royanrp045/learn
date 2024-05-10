@@ -96,12 +96,12 @@ button {
   background-color: black;
   margin-left: 240px;
   margin-top: 75px;
-  transition: 0.5s ease;
+  transition: 0.3s ease-out;
 }
 
 button:hover {
-  color: black;
-  background-color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(106, 106, 106);
 }
 
 .categories {
