@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+
+.logo h3 {
+  font-size: 32px;
+  font-weight: 500;
+  padding-left: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-right: 100px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  margin: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.content {
+  padding-left: 100px;
+}
+
+.content .font h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.content .font2 .arrow {
+  background-image: url(../img/Arrow\ 1.png);
+  height: 15px;
+  width: 200px;
+  background-size: cover;
+  display: flex;
+  margin-top: 15px;
+}
+
+.content .font2 h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: -70px;
+  padding-left: 235px;
+  display: flex;
+}
+
+.content .font3 h1 {
+  font-size: 80px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: -38px;
+}
+
+.content .explanation {
+  padding-left: 670px;
+  margin-top: 20px;
+}
+.content .explanation .arrow {
+  background-image: url(../img/Arrow\ 2.png);
+  height: 7px;
+  width: 115px;
+  background-size: cover;
+  margin-left: -140px;
+}
+.content .explanation h1 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: -27px;
+  display: inline-block;
+  position: absolute;
+}
+
+button {
+  font-size: 32px;
+  padding: 10px 18px;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  margin-left: 240px;
+  margin-top: 75px;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+.categories {
+  display: flex;
+  padding-top: 110px;
+}
+
+.categories .box1 {
+  height: 190px;
+  width: 190px;
+  background-image: url(../img/image\ 8.png);
+  background-size: cover;
+  margin-left: 100px;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.categories .box1:hover {
+  height: 210px;
+  width: 210px;
+}
+
+.categories .box2 {
+  height: 210px;
+  width: 210px;
+  background-image: url(../img/gulungan.png);
+  background-size: cover;
+  margin-left: 110px;
+  transition: 0.5s ease;
+}
+
+.categories .box2:hover {
+  height: 230px;
+  width: 230px;
+}
+
+.categories .box3 {
+  height: 230px;
+  width: 230px;
+  background-image: url(../img/tas.png);
+  background-size: cover;
+  margin-left: 110px;
+  margin-top: -15px;
+  transition: 0.5s ease;
+}
+
+.categories .box3:hover {
+  height: 250px;
+  width: 250px;
+}
+
+.categories .box4 {
+  height: 190px;
+  width: 190px;
+  background-image: url(../img/kursi.png);
+  background-size: cover;
+  margin-left: 110px;
+  margin-top: 15px;
+  transition: 0.5s ease;
+}
+
+.categories .box4:hover {
+  height: 210px;
+  width: 210px;
+}
+
+.categories .box5 {
+  height: 195px;
+  width: 195px;
+  background-image: url(../img/gatel.png);
+  background-size: cover;
+  margin-left: 140px;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.categories .box5:hover {
+  height: 215px;
+  width: 215px;
+}
