@@ -1,124 +1,168 @@
 * {
-  margin: 0;
   padding: 0;
-}
-
-body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
 }
 
-nav {
-  display: flex;
-  width: 100%;
-  background-color: white;
-  justify-content: space-between;
-  height: 120px;
-  align-items: center;
+.navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
   position: fixed;
-  margin-top: -8px;
 }
 
-.logo h3 {
+.navbar .container-fluid {
+  margin: 8px 80px;
+}
+
+.navbar .navbar-brand {
   font-size: 32px;
   font-weight: 500;
-  padding-left: 100px;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  padding-right: 100px;
+.offcanvas-body ul li {
+  padding-right: 30px;
 }
 
-nav ul li a {
-  color: black;
-  text-decoration: none;
-  margin: 30px;
+.offcanvas-body ul li a {
   font-size: 24px;
   font-weight: 500;
-  transition: 0.5s ease;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  text-decoration-color: #1567e9;
+.nav-link {
+  color: #000000;
+  position: relative;
 }
 
-.content {
-  padding-left: 100px;
-  padding-top: 120px;
+.nav-link:hover,
+.nav-link.active {
+  color: #000000;
 }
 
-.content .font h1 {
-  font-size: 80px;
-  font-weight: 500;
-  margin-top: 10px;
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #1567e9;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
 }
 
-.content .font2 .arrow {
-  background-image: url(../img/Arrow\ 1.png);
-  height: 15px;
-  width: 200px;
-  background-size: cover;
+.nav-link:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.main-text {
+  margin-top: 120px;
+  margin-left: 80px;
+}
+
+.main-text h1 {
+  font-size: 90px;
+  line-height: 1;
+}
+
+.main-text h1 span {
+  margin-left: 290px;
+}
+
+.main-text .arrow {
+  width: 250px;
+  height: 2px;
+}
+
+.main-text .arrow img {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.second-text {
+  float: right;
+  margin-right: 200px;
+  margin-top: 60px;
   display: flex;
-  margin-top: 15px;
 }
 
-.content .font2 h1 {
-  font-size: 80px;
-  font-weight: 500;
-  margin-top: -70px;
-  padding-left: 235px;
-  display: flex;
+.second-text .arrow {
+  width: 120px;
+  height: 1px;
+  margin-top: 5px;
+  margin-right: 50px;
 }
 
-.content .font3 h1 {
-  font-size: 80px;
-  font-weight: 500;
-  font-style: italic;
-  margin-top: -38px;
+.second-text .arrow img {
+  width: 100%;
 }
 
-.content .explanation {
-  padding-left: 670px;
-  margin-top: 20px;
-}
-.content .explanation .arrow {
-  background-image: url(../img/Arrow\ 2.png);
-  height: 7px;
-  width: 115px;
-  background-size: cover;
-  margin-left: -140px;
-}
-.content .explanation h1 {
-  font-size: 32px;
+.second-text h2 {
+  font-size: 28px;
   font-weight: 300;
-  margin-top: -27px;
-  display: inline-block;
-  margin-bottom: 70px;
+  line-height: 1.4;
 }
 
-.categories {
-  margin: 0 auto;
+.second-text h2 i {
+  padding: 18px 35px;
+  color: #1567e9;
+  background-color: #ffffff;
+  border: 2px solid #1567e9;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-left: 240px;
+  animation: changearw 4s infinite linear;
+}
+
+@keyframes changearw {
+  0% {
+    background-color: #1567e9;
+  }
+
+  20% {
+    background-color: #ffffff;
+  }
+
+  40% {
+    background-color: #1567e9;
+  }
+
+  70% {
+    background-color: #ffffff;
+  }
+
+  100% {
+    background-color: #1567e9;
+  }
+}
+
+.boxfoto {
   display: flex;
+  margin: auto;
+  width: 80%;
   justify-content: center;
+  padding: 0 100px;
 }
 
-.imgresponsif {
-  width: 200px;
-  margin: 60px;
+.anchor img {
+  height: 170px;
+  margin: 0 80px;
   transition: 0.5s ease;
-}
-.imgresponsif:hover {
-  width: 210px;
+  margin-top: 100px;
 }
 
-/* content */
+.anchor img:hover {
+  transform: scale(1.3);
+}
+
+/* Konten 2 */
+
 .content2 {
   display: flex;
   width: 100%;
-  height: 850px;
-  padding-top: 80px;
+  height: 1000px;
+  padding-top: 140px;
 }
 
 .content2 .image {
