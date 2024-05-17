@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  position: fixed;
+}
+
+.navbar .container-fluid {
+  margin: 8px 80px;
+}
+
+.navbar .navbar-brand {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.offcanvas-body {
+  margin-left: -130px;
+}
+
+.offcanvas-body ul li {
+  padding-right: 30px;
+}
+
+.offcanvas-body ul li a {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: #000000;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000000;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #1567e9;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.content2 {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  padding-top: 140px;
+}
+
+.content2 .image {
+  margin-left: 100px;
+  width: 600px;
+  height: 600px;
+  border-radius: 100px;
+  margin-top: 80px;
+}
+
+.content2 .text {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.content2 .text h1 {
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 80px;
+}
+
+.content2 p {
+  width: 700px;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.team {
+  width: 100%;
+  height: 90vh;
+  margin-top: -30px;
+  background-image: url(image/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.team h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+
+.team h1 span {
+  color: #1567e9;
+  margin-left: 15px;
+}
+
+.team .team_box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 13%;
+}
+
+.team .team_box .profile {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover {
+  border-radius: 20px;
+  height: 320px;
+}
+
+.team .team_box .profile img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover img {
+  border-radius: 20px;
+  margin-top: -230px;
+}
+
+.team .team_box .profile .info {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info {
+  top: 60%;
+}
+
+.team .team_box .profile .info .name {
+  color: #fac031;
+  margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i {
+  margin: 10px 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover {
+  color: #fac031;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 0 0 20px;
+  background: #bababa;
+  margin-top: -20px;
+}
+
+footer .footer_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag {
+  text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+footer .footer_main .footer_tag p {
+  margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover {
+  color: #faf9f5;
+}
+
+footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+footer .end span {
+  color: #1567e9;
+  margin-left: 10px;
+}

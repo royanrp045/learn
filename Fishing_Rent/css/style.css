@@ -19,6 +19,10 @@
   font-weight: 500;
 }
 
+.offcanvas-body {
+  margin-left: -130px;
+}
+
 .offcanvas-body ul li {
   padding-right: 30px;
 }
@@ -258,4 +262,53 @@
   margin-left: 100px;
   font-size: 30px;
   font-weight: 300;
+}
+
+/*;';';';';'; */
+
+footer {
+  width: 100%;
+  padding: 30px 0 0 20px;
+  background: #bababa;
+  margin-top: 100px;
+}
+
+footer .footer_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag {
+  text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+footer .footer_main .footer_tag p {
+  margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover {
+  color: #faf9f5;
+}
+
+footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+footer .end span {
+  color: #1567e9;
+  margin-left: 10px;
 }
